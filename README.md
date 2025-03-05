@@ -6,3 +6,6 @@ Section: CMSC 100 (U-3L)
 Date: March 5, 2025
 
 Key Takeaways: 
+I couldn't understand the lecture.
+Use (app.use(express.json)) as a middleman between server.js and request.js.
+Port 3000 is the most common port for development.
