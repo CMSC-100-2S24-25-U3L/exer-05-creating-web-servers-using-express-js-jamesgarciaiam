@@ -19,10 +19,12 @@ app.get('/add-book', (req, res) => {
         req.query.author == "" ||
         req.query.yearPublished == ""
     ) {
+        console.log({success: false});
         res.send('Please provide all the required fields');
         return;
     } else {
         fs.appendFileSync('books.txt', `${req.query.bookName}, ${req.query.isbn}, ${req.query.author}, ${req.query.yearPublished}\n`);
+        console.log({success: true});
         res.send('Book added');
     }
 });
